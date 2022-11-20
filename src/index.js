@@ -1,3 +1,16 @@
+function formatDate(date) {
+  let hours = date.getHours();
+  if (hours > 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minures < 10) {
+    minutes = `0${minutes}`;
+  }
+}
+
+
+
 let now = new Date();
 let h3 = document.querySelector("h3");
 let hours = now.getHours();
