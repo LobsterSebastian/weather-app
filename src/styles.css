@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(112.1deg,
+            rgb(32, 38, 57) 11.4%,
+            rgb(63, 76, 119) 70.2%);
+    font-family: "Indie Flower", cursive;
+    font-family: "Pangolin", cursive;
+}
+
+h1,
+h2,
+h3 {
+    color: #e7eaf6;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 10px;
+}
+
+.card {
+    color: #113f67;
+    width: 250px;
+    display: grid;
+    height: 100%;
+}
+
+.card-img-top {
+    width: 325px;
+}
+
+.col-2 {
+    color: #e7eaf6;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.city {
+    position: fixed;
+    right: 15%;
+}
+
+.card-text,
+h5 {
+    font-size: 50px;
+}

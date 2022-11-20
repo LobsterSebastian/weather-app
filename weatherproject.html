@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pangolin&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-2">
+                Paris
+            </div>
+            <div class="col-2">
+                Lisbon
+            </div>
+            <div class="col-2">
+                Warsaw
+            </div>
+            <div class="col-2">
+                London
+            </div>
+            <div class="col-2">
+                Bratislava
+            </div>
+            <div class="col-2">
+                Rome
+            </div>
+        </div>
+    </div>
+    <br />
+    <form action="/submit" id="form-city">
+        <input type="text" id="city-input" placeholder="Check my city" />
+        <input class="btn btn-primary" type="submit" id="current-button" value="Current location" />
+        <input class="btn btn-primary" type="submit" id="search-button" value="Search" />
+    </form>
+    <h1 id="current-city">
+        Kyiv
+    </h1>
+    <h3>
+        Sunday 20:57
+    </h3>
+    <h2>
+        <span>
+            <h2>
+                <span id="current-temp"> 11 </span>
+                <a href="#" id="cel-temp">°C</a>
+        </span>
+        <div id="humidity">Humidity: 10%</div>
+        <div id="windSpeed">Windspeed: 40 mph</div>
+    </h2>
+    <br />
+
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <img src="images/rain.svg" class="card-img-top" alt="Rain" />
+                <div class="card-body">
+                    <h5 class="card-title">Mon</h5>
+                    <p class="card-text">10°C</p>
+                    <a href="#" class="btn btn-primary">
+                        It's raining day!
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <img src="images/clouds.svg" class="card-img-top" alt="Clouds" />
+                <div class="card-body">
+                    <h5 class="card-title">Tue</h5>
+                    <p class="card-text">13°C</p>
+                    <a href="#" class="btn btn-primary">Careful! Zero visibility</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <img src="images/after.svg" class="card-img-top" alt="After" />
+                <div class="card-body">
+                    <h5 class="card-title">Wed</h5>
+                    <p class="card-text">14°C</p>
+                    <a href="#" class="btn btn-primary">
+                        No point to take your umbrella!
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card">
+                <img src="images/weather.svg" class="card-img-top" alt="Weather" />
+                <div class="card-body">
+                    <h5 class="card-title">Friday</h5>
+                    <p class="card-text">0°C</p>
+                    <a href="#" class="btn btn-primary"> Take your gloves with you!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
