@@ -52,6 +52,7 @@ function showWeather(response) {
   let temp = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = temp;
+  celsiusTemperature = response.data.main.temp;
 
   let currentCity = document.querySelector("#current-city");
   currentCity.innerHTML = response.data.name;
@@ -89,11 +90,26 @@ currentButton.addEventListener("click", currentCityWeather);
 
 function showFarTemp(event) {
   event.preventDefault();
-  let fahrenheitTemperature= (14 × 9 / 5) + 32; 
+  let fahrenheitTemperature= (celsiusTemperature * 9)/ 5 + 32; 
   let temperatureElement = document.querySelector("#current-temp");
-  temperatureElement.innerHTML = fahrenheitTemperature;
+  celLink.classList.remove("active");
+  farLink.classList.add("active");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+function showCelTemp(event) {
+event.preventDefault(); 
+  let temperatureElement = document.querySelector("#current-temp");  
+  celLink.classList.add("active");
+  farLink.classList.remove("active");
+temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
 
 let farLink = document.querySelector("#far-temp");
 farLink.addEventListener("click", showFarTemp);
+
+let celLink = document.querySelector("#cel-temp");
+celLink.addEventListener("click", showCelTemp);
+

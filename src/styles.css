@@ -29,9 +29,16 @@ h3 {
     
 }
 
+.active {
+color: black;
+cursor: default;
+text-decoration: none;
+}
 
-
-
+.holderLink {
+display: block;
+text-align: center;
+}
 
 
 
