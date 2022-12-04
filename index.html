@@ -16,32 +16,12 @@
 </head>
 
 <body>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-2">
-                Paris
-            </div>
-            <div class="col-2">
-                Lisbon
-            </div>
-            <div class="col-2">
-                Warsaw
-            </div>
-            <div class="col-2">
-                London
-            </div>
-            <div class="col-2">
-                Bratislava
-            </div>
-            <div class="col-2">
-                Rome
-            </div>
-        </div>
-    </div>
-    <br />
-    <form action="/submit" id="form-city">
-        <input type="text" id="city-input" placeholder="Check my city" />
-        <input class="btn btn-primary" type="submit" id="current-button" value="Current location" />
+    <div class="container">
+    <div class="weather-app-wrapper">
+    <div class="weather-app">
+       <form action="/submit" id="form-city">
+        <input type="search" id="city-input" placeholder="Check my city" class="form-control" autocomplete="off" />
+        <input class="btn btn-primary" type="submit" id="current-button" value="Your location" />
         <input class="btn btn-primary" type="submit" id="search-button" value="Search" />
     </form>
     <h1 id="current-city">
@@ -53,64 +33,19 @@
     <h2>
         <span>
             <h2>
+                <img src="" alt="Clear" id="icon" class="float-left" />
                 <span id="current-temp"> 11 </span>
-                <a href="#" id="cel-temp">°C</a>
+                <a href="#" id="cel-temp">°C</a> |
+                <a href="#" id="far-temp">°F</a>
         </span>
         <div id="humidity">Humidity: 10%</div>
         <div id="windSpeed">Windspeed: 40 mph</div>
     </h2>
     <br />
-
-    <div class="row">
-        <div class="col-3">
-            <div class="card">
-                <img src="images/rain.svg" class="card-img-top" alt="Rain" />
-                <div class="card-body">
-                    <h5 class="card-title">Mon</h5>
-                    <p class="card-text">10°C</p>
-                    <a href="#" class="btn btn-primary">
-                        It's raining day!
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-3">
-            <div class="card">
-                <img src="images/clouds.svg" class="card-img-top" alt="Clouds" />
-                <div class="card-body">
-                    <h5 class="card-title">Tue</h5>
-                    <p class="card-text">13°C</p>
-                    <a href="#" class="btn btn-primary">Careful! Zero visibility</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-3">
-            <div class="card">
-                <img src="images/after.svg" class="card-img-top" alt="After" />
-                <div class="card-body">
-                    <h5 class="card-title">Wed</h5>
-                    <p class="card-text">14°C</p>
-                    <a href="#" class="btn btn-primary">
-                        No point to take your umbrella!
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-3">
-            <div class="card">
-                <img src="images/weather.svg" class="card-img-top" alt="Weather" />
-                <div class="card-body">
-                    <h5 class="card-title">Friday</h5>
-                    <p class="card-text">0°C</p>
-                    <a href="#" class="btn btn-primary"> Take your gloves with you!</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <br />
+    </div>
+    </div>
+    </div>
     <a href="https://github.com/LobsterSebastian/weather-app" target="_blank">Open-source code</a>
     <span>by Hanna Klimenova</span>
     <script src="src/index.js"></script>
