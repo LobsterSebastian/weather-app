@@ -40,6 +40,9 @@ display: block;
 text-align: center;
 }
 
+.weatheCond:first-letter {
+text-transform: capitalize;
+}
 
 
 

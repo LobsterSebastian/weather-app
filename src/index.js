@@ -54,6 +54,9 @@ function showWeather(response) {
   currentTemp.innerHTML = temp;
   celsiusTemperature = response.data.main.temp;
 
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+
   let currentCity = document.querySelector("#current-city");
   currentCity.innerHTML = response.data.name;
 
